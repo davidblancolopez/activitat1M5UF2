@@ -93,6 +93,7 @@ public class MyUtils {
     public static double factorial(double numero) {
         int factorial = 1;
 
+        
         if (numero <= 0) {
             return 1;
         } else {
