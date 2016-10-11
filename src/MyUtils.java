@@ -20,11 +20,16 @@ public class MyUtils {
     public static String inverteix(String cadena) {
         String resultat = "";
 
-        for (int x = cadena.length() - 1; x >= 0; x--) {
-            resultat = resultat + cadena.charAt(x);
+        if (cadena == null) {
+            return null;
+        } else {
+            for (int x = cadena.length() - 1; x >= 0; x--) {
+                resultat = resultat + cadena.charAt(x);
+            }
+
+            return resultat;
         }
 
-        return resultat;
     }
 
     /**
@@ -41,6 +46,7 @@ public class MyUtils {
         int resultat = 0;
         int dia, mes, any;
         int dia2, mes2, any2;
+        
 
         dia = (c1.get(Calendar.DATE));
         mes = (c1.get(Calendar.MONTH));
@@ -77,7 +83,7 @@ public class MyUtils {
     public static double factorial(double numero) {
         int factorial = 1;
 
-        if (numero == 0) {
+        if (numero <= 0) {
             return 1;
         } else {
             for (int i = (int) numero; i > 0; i--) {
@@ -86,11 +92,7 @@ public class MyUtils {
 
             double resultat = factorial;
 
-            if (resultat < 0) {
-                return -1;
-            } else {
                 return resultat;
-            }
 
         }
 
