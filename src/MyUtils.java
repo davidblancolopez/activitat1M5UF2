@@ -51,7 +51,7 @@ public class MyUtils {
         any2 = any - year;
 
         if (dia2 <= 0) {
-            dia2 = 0 + dia2;
+            dia2 = 0 - dia2;
             mes2 -= 1;
         }
         if (mes2 <= 0) {
