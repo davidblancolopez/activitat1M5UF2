@@ -72,6 +72,8 @@ public class MyUtils {
 
             if (any2 > 150) {
                 resultat = -2;
+            } else if (any2 == 0){
+                resultat = -2;
             } else {
                 resultat = -1;
             }
