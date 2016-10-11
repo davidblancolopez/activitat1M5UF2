@@ -3,7 +3,6 @@
  * and open the template in the editor.
  */
 
-
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
@@ -46,26 +45,26 @@ public class MyUtils {
         dia = (c1.get(Calendar.DATE));
         mes = (c1.get(Calendar.MONTH));
         any = (c1.get(Calendar.YEAR));
-        
+
         dia2 = dia - day;
         mes2 = month - mes;
         any2 = any - year;
-        
+
         if (dia2 <= 0) {
-           dia2 = 0 + dia2;
-           mes2 -= 1 ;
+            dia2 = 0 + dia2;
+            mes2 -= 1;
         }
         if (mes2 <= 0) {
             any2 -= 1;
             mes2 += 12;
-        }  
-        
+        }
+
         if (any2 > 150) {
             resultat = -2;
-        }else{
+        } else {
             resultat = -1;
         }
-        
+
         return resultat;
     }
 
@@ -76,18 +75,24 @@ public class MyUtils {
      * -1.
      */
     public static double factorial(double numero) {
-            int factorial = 0;
+        int factorial = 1;
+
         if (numero == 0) {
             return 1;
         } else {
-            for (int i = (int) numero - 1; i < 0; i--) {
+            for (int i = (int) numero; i > 0; i--) {
                 factorial *= i;
             }
-            
-            double resultat = numero * factorial(numero - 1);
-            return resultat;
+
+            double resultat = factorial;
+
+            if (resultat < 0) {
+                return -1;
+            } else {
+                return resultat;
+            }
+
         }
-        
-        
+
     }
 }
