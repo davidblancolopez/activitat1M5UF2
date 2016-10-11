@@ -46,32 +46,40 @@ public class MyUtils {
         int resultat = 0;
         int dia, mes, any;
         int dia2, mes2, any2;
-        
 
-        dia = (c1.get(Calendar.DATE));
-        mes = (c1.get(Calendar.MONTH));
-        any = (c1.get(Calendar.YEAR));
-
-        dia2 = dia - day;
-        mes2 = month - mes;
-        any2 = any - year;
-
-        if (dia2 <= 0) {
-            dia2 = 0 - dia2;
-            mes2 -= 1;
-        }
-        if (mes2 <= 0) {
-            any2 -= 1;
-            mes2 += 12;
-        }
-
-        if (any2 > 150) {
-            resultat = -2;
+        if (day <= 0 || day < 31 || month >= 0 || month > 12) {
+            
+            return -2;
+            
         } else {
-            resultat = -1;
-        }
 
-        return resultat;
+            dia = (c1.get(Calendar.DATE));
+            mes = (c1.get(Calendar.MONTH));
+            any = (c1.get(Calendar.YEAR));
+
+            dia2 = dia - day;
+            mes2 = month - mes;
+            any2 = any - year;
+
+            if (dia2 <= 0) {
+                dia2 = 0 - dia2;
+                mes2 -= 1;
+            }
+            if (mes2 <= 0) {
+                any2 -= 1;
+                mes2 += 12;
+            }
+
+            if (any2 > 150) {
+                resultat = -2;
+            } else {
+                resultat = -1;
+            }
+
+            return resultat;
+            
+
+        }
     }
 
     /**
@@ -92,7 +100,7 @@ public class MyUtils {
 
             double resultat = factorial;
 
-                return resultat;
+            return resultat;
 
         }
 
