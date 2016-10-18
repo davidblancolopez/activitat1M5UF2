@@ -46,13 +46,25 @@ public class provesMyUtils {
     // public void hello() {}
     
     
+    //Test inverteix1 no introducimos nada y lo dejamos en null
+    //entonces devolvera null.
     @Test
-    public final void testInverteix() {
+    public final void testInverteix1() {
+        //fail ("Sin implementar");
+        
+        assertEquals( null, MyUtils.inverteix(null));
+    }
+    
+    //Test inverteix1 introducimos la cadena "david" y devuelve "divad".
+    @Test
+    public final void testInverteix2() {
         //fail ("Sin implementar");
         
         assertEquals("divad", MyUtils.inverteix("david"));
     }
 
+    
+    
     @Test
     public final void testEdat() {
         //fail ("Sin implementar");
