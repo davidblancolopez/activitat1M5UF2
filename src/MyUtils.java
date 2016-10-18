@@ -47,7 +47,7 @@ public class MyUtils {
         int dia, mes, any;
         int dia2, mes2, any2;
 
-        if (day <= 0 || day < 31 || month >= 0 || month > 12) {
+        if (day <= 0 || day > 31 || month <= 0 || month > 12) {
             
             return -2;
             
@@ -61,21 +61,14 @@ public class MyUtils {
             mes2 = month - mes;
             any2 = any - year;
 
-            if (dia2 <= 0) {
-                dia2 = 0 - dia2;
-                mes2 -= 1;
-            }
-            if (mes2 <= 0) {
-                any2 -= 1;
-                mes2 += 12;
-            }
+            
 
             if (any2 > 150) {
                 resultat = -2;
             } else if (any2 == 0){
                 resultat = -2;
             } else {
-                resultat = -1;
+                resultat = 0;
             }
 
             return resultat;
@@ -90,18 +83,18 @@ public class MyUtils {
      * @return retorna el factorial d'un número. Si el nombre es negatiu retorna
      * -1.
      */
-    public static double factorial(double numero) {
+    public static int factorial(int numero) {
         int factorial = 1;
 
         
         if (numero <= 0) {
-            return 1;
+            return -1;
         } else {
             for (int i = (int) numero; i > 0; i--) {
                 factorial *= i;
             }
 
-            double resultat = factorial;
+            int resultat = factorial;
 
             return resultat;
 
