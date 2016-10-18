@@ -68,7 +68,7 @@ public class MyUtils {
             } else if (any2 == 0){
                 resultat = -2;
             } else {
-                resultat = 0;
+                resultat = any2;
             }
 
             return resultat;
