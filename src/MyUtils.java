@@ -23,10 +23,10 @@ public class MyUtils {
         if (cadena == null) {
             return null;
         } else {
-            for (int x = cadena.length() - 1; x >= 0; x--) {
-                resultat = resultat + cadena.charAt(x);
+            for (int i = cadena.length() - 1; i >= 0; i--) {
+                resultat = resultat + cadena.charAt(i);
             }
-
+            System.out.println(resultat);
             return resultat;
         }
 

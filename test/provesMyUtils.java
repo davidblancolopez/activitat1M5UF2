@@ -58,7 +58,7 @@ public class provesMyUtils {
     public final void testEdat() {
         //fail ("Sin implementar");
         
-        assertEquals(-1, MyUtils.edat(24, 9, 1994));
+        assertEquals(22, MyUtils.edat(24, 9, 1994));
     }
 
    
