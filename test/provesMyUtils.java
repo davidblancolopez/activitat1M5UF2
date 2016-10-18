@@ -93,7 +93,18 @@ public class provesMyUtils {
         assertEquals(-2, MyUtils.edat(00, 1, 1994));
     }
     
-    //@Test
+    //Test de edat 4 introducimos una fecha mala que nos devolvera -2.
+    //Esta mal el mes.
+    @Test
+    public final void testEdat4() {
+        //fail ("Sin implementar");
+        
+        assertEquals(-2, MyUtils.edat(1, 13, 1994));
+    }
+    
+    
+    
+    
     @Test
     public final void testFactorial() {
         //fail ("Sin implementar");
