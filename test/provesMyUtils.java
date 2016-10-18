@@ -46,8 +46,7 @@ public class provesMyUtils {
     // public void hello() {}
     
     
-  @Test
-    @Ignore
+    @Test
     public final void testInverteix() {
         //fail ("Sin implementar");
         
