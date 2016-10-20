@@ -64,7 +64,7 @@ public class MyUtils {
             
 
             if (any2 > 150) {
-                resultat = -2;
+                resultat = -1;
             } else if (any2 <= 0){
                 resultat = -2;
             } else {
@@ -72,8 +72,6 @@ public class MyUtils {
             }
 
             return resultat;
-            
-
         }
     }
 
