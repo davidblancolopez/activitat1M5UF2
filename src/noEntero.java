@@ -2,7 +2,7 @@
 public class noEntero extends Exception{
     
     public noEntero() {
-        super(" El numero tiene que ser sin decimales.");
+        super(" Se tiene que introducir un numero entero, sin decimales.");
     }
     
 }
