@@ -123,10 +123,28 @@ public class provesMyUtils {
     public final void testFactorial() {
         //fail ("Sin implementar");
         
-        assertEquals(-1, MyUtils.factorial(0));
+        assertEquals(120, MyUtils.factorial(5));
     }
     
-
+    
+    //Test de factorial 2 introducimos un numero que nos devolvera -1
+    //Hemos puesto -5.
+    @Test
+    public final void testFactorial2() {
+        //fail ("Sin implementar");
+        
+        assertEquals(-1, MyUtils.factorial(-5));
+    }
+    /*
+    //Test de factorial 3 introducimos un numero que nos devolvera -1
+    //Hemos puesto una letra.
+    @Test
+    public final void testFactorial3() {
+        //fail ("Sin implementar");
+        
+        assertEquals(, MyUtils.factorial(a));
+    }
+    */
 
 
 

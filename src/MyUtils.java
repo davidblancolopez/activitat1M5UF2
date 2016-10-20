@@ -84,8 +84,6 @@ public class MyUtils {
     public static int factorial(int numero) {
         int factorial = 1;
 
-        
-        
             for (int i = (int) numero; i > 0; i--) {
                 factorial *= i;
             }
