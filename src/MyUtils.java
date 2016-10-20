@@ -82,7 +82,7 @@ public class MyUtils {
      * -1.
      */
     public static double factorial(double numero) {
-        int factorial = 1, resultat;
+        double factorial = 1, resultat = -1.00;
 
         if(numero >= 0){
             for (int i = (int) numero; i > 0; i--) {
@@ -90,8 +90,6 @@ public class MyUtils {
             }
 
             resultat = factorial;
-        }else{
-            resultat = -1;
         }
             return resultat;
 

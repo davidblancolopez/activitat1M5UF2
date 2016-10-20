@@ -123,7 +123,7 @@ public class provesMyUtils {
     public final void testFactorial() {
         //fail ("Sin implementar");
         
-        assertEquals(120, MyUtils.factorial(5));
+        assertEquals(120,00 , MyUtils.factorial(5));
     }
     
     
@@ -133,7 +133,7 @@ public class provesMyUtils {
     public final void testFactorial2() {
         //fail ("Sin implementar");
         
-        assertEquals(-1, MyUtils.factorial(-5));
+        assertEquals(-1,00 , MyUtils.factorial(-5));
     }
     
     
