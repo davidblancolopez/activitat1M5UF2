@@ -85,9 +85,7 @@ public class MyUtils {
         int factorial = 1;
 
         
-        if (numero <= 0) {
-            return -1;
-        } else {
+        
             for (int i = (int) numero; i > 0; i--) {
                 factorial *= i;
             }
@@ -95,8 +93,6 @@ public class MyUtils {
             int resultat = factorial;
 
             return resultat;
-
-        }
 
     }
 }

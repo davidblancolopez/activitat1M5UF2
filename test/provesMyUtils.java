@@ -117,12 +117,13 @@ public class provesMyUtils {
     
     
     
-    
+    //Test de factorial 1 introducimos un numero que nos devolvera -1
+    //Hemos puesto 0.
     @Test
     public final void testFactorial() {
         //fail ("Sin implementar");
         
-        assertEquals(120, MyUtils.factorial(5));
+        assertEquals(-1, MyUtils.factorial(0));
     }
     
 
