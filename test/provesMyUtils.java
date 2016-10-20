@@ -103,6 +103,19 @@ public class provesMyUtils {
     }
     
     
+    //Test de edat 5 introducimos una fecha de mas de 150 años que nos devolvera -1.
+    //La edat es mas que 150.
+    @Test
+    public final void testEdat5() {
+        //fail ("Sin implementar");
+        
+        assertEquals(-1, MyUtils.edat(1, 1, 1800));
+    }
+    
+    
+    
+    
+    
     
     
     @Test
