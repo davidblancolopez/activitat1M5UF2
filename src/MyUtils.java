@@ -81,10 +81,10 @@ public class MyUtils {
      * @return retorna el factorial d'un número. Si el nombre es negatiu retorna
      * -1.
      */
-    public static double factorial(double numero) {
-        double factorial = 1, resultat = -1.00;
+    public static int factorial(int numero) {
+        int factorial = 1, resultat = -1;
 
-        if(numero >= 0){
+        if(numero > 0){
             for (int i = (int) numero; i > 0; i--) {
                 factorial *= i;
             }
